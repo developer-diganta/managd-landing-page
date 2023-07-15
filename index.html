@@ -180,32 +180,79 @@
       </div>
 
       <div style="height: 10px">
-      
         <div class="swiper">
           <!-- Additional required wrapper -->
           <div class="swiper-wrapper">
             <!-- Slides -->
             <div class="swiper-slide">
               <div class="swiper-js-img">
-                <div style="height: 80px;width: 80px; background-color: red; border-radius: 50%; box-shadow: 0px 0px 10px #504dff;"></div>
+                <div
+                  style="
+                    height: 80px;
+                    width: 80px;
+                    background-color: red;
+                    border-radius: 50%;
+                    box-shadow: 0px 0px 10px #504dff;
+                  "
+                ></div>
               </div>
-                <div class="swiper-js-text">
-                  <h2>John Doe, XYZ Corp</h2>
-                  <h4>Lorem ipsum dolor sit amet, consectetuer adipiscing. Lorem ipsum dolor sit amet, consectetuer adipiscing</h4>
-                </div>
-       
+              <div class="swiper-js-text">
+                <h2>John Doe, XYZ Corp</h2>
+                <h4>
+                  Lorem ipsum dolor sit amet, consectetuer adipiscing. Lorem
+                  ipsum dolor sit amet, consectetuer adipiscing
+                </h4>
+              </div>
             </div>
-            <div class="swiper-slide" style="background-color: blue;">2</div>
-            <div class="swiper-slide" style="background-color: green;">3</div>
+            <div class="swiper-slide">
+              <div class="swiper-js-img">
+                <div
+                  style="
+                    height: 80px;
+                    width: 80px;
+                    background-color: red;
+                    border-radius: 50%;
+                    box-shadow: 0px 0px 10px #504dff;
+                  "
+                ></div>
+              </div>
+              <div class="swiper-js-text">
+                <h2>John Doe, XYZ Corp</h2>
+                <h4>
+                  Lorem ipsum dolor sit amet, consectetuer adipiscing. Lorem
+                  ipsum dolor sit amet, consectetuer adipiscing
+                </h4>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="swiper-js-img">
+                <div
+                  style="
+                    height: 80px;
+                    width: 80px;
+                    background-color: red;
+                    border-radius: 50%;
+                    box-shadow: 0px 0px 10px #504dff;
+                  "
+                ></div>
+              </div>
+              <div class="swiper-js-text">
+                <h2>John Doe, XYZ Corp</h2>
+                <h4>
+                  Lorem ipsum dolor sit amet, consectetuer adipiscing. Lorem
+                  ipsum dolor sit amet, consectetuer adipiscing
+                </h4>
+              </div>
+            </div>
             ...
           </div>
           <!-- If we need pagination -->
           <div class="swiper-pagination"></div>
-        
+
           <!-- If we need navigation buttons -->
           <div class="swiper-button-prev"></div>
           <div class="swiper-button-next"></div>
-        
+
           <!-- If we need scrollbar -->
           <div class="swiper-scrollbar"></div>
         </div>
@@ -231,26 +278,24 @@
       delay: 10, // The delay between each iteration (the default of 10 will produce 100 fps) [miliseconds]
       once: true, // Counting at once or recount when the element in view [boolean]
       pulse: false, // Repeat count for certain time [boolean:false|seconds]
-    
     });
-    const swiper = new Swiper('.swiper', {
-  // Optional parameters
-  direction: 'horizontal',
-  loop: true,
+    const swiper = new Swiper(".swiper", {
+      // Optional parameters
+      direction: "horizontal",
+      loop: true,
 
-  // If we need pagination
-  pagination: {
-    el: '.swiper-pagination',
-  },
+      // If we need pagination
+      pagination: {
+        el: ".swiper-pagination",
+      },
 
-  // Navigation arrows
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
+      // Navigation arrows
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
 
-  // And if we need scrollbar
-
-});
+      // And if we need scrollbar
+    });
   </script>
 </html>
