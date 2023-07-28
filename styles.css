@@ -411,7 +411,7 @@ input[type="reset"] {
 
 .count-msg {
   font-size: 22px;
-  font-weight: 500;
+  font-weight: 700;
 }
 
 .swiper {
@@ -435,4 +435,62 @@ input[type="reset"] {
 
 .swiper-js-text {
   text-align: center;
+}
+
+.logo{
+  z-index: 999;
+  position: fixed;
+  height: 70px;
+  border-radius: 50px;
+  left: 20px;
+  top: 20px;
+  box-shadow: 0px 0px 10px 2px #393674;
+}
+
+.logo:hover{
+  z-index: 999;
+  position: fixed;
+  height: 70px;
+  border-radius: 50px;
+  left: 20px;
+  top: 20px;
+  box-shadow: 0px 0px 10px 5px #8caafa;
+}
+
+#logoContainer{
+  z-index: 5;
+  position: fixed;
+  height: 50px;
+  border-radius: 10px;
+  left: 8px;
+  top: 100px;
+    padding: 15px;
+  align-items: center;
+  margin-top: 15px;
+  display: none;
+}
+
+.logoButton{
+  background-color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 5px;
+  display: flex;
+  margin: auto;
+  margin-top: -15px;
+  box-shadow: 0px 0px 10px 2px #393674;
+}
+
+.logoButton:hover{
+  background-color: #504dff;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 5px;
+  display: flex;
+  margin: auto;
+  margin-top: -15px;
+  box-shadow: 0px 0px 10px 2px #393674;
+  
+
 }

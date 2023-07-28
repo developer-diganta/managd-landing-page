@@ -14,11 +14,32 @@
   <script src="https://kit.fontawesome.com/209e02954c.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="styles.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+  <script>const swiper1 = new Swiper('.swiper', {
+      // Optional parameters
+      direction: 'vertical',
+      loop: true,
 
+      // If we need pagination
+      pagination: {
+        el: '.swiper-pagination',
+      },
+
+      // Navigation arrows
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });</script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-element-bundle.min.js"></script>
+
 </head>
 
 <body>
+  <img class="logo" src="./assets/managdLogo.png" alt="Logo" onclick="logo()">
+  <div id="logoContainer">
+<button class="logoButton">SignUp</button><br>
+<button class="logoButton">LogIn</button></div>
   <div id="main-section">
     <div id="hero">
       <div id="header">
@@ -38,10 +59,10 @@
       <link rel="stylesheet" href="styles.css" />
       <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
       <div class="swiper">
-        <div class="swiper-wrapper">
+        <div class="swiper-wrapper" slides-per-view="3" speed="500" loop="true" css-mode="true">
           <div class="swiper-slide"> <img src="./assets/board.png" /></div>
-          <div class="swiper-slide"> <img src="./assets/board.png" /></div>
-          <div class="swiper-slide"> <img src="./assets/board.png" /></div>
+          <div class="swiper-slide"> <img src="./assets/memberProfile.png" /></div>
+          <div class="swiper-slide"> <img src="./assets/OrgDashBoard.png" /></div>
         </div>
       </div>
       <div class="swiper-button-prev"></div>
@@ -111,17 +132,19 @@
     <div class="third-section">
       <div class="third-section-row-one">
         <div class="col-one">
-          <img src="./assets/board.png" width="100%" height="500px" class="col-img" />
+          <img src="./assets/memberKanban.png" width="100%" height="500px" class="col-img" />
         </div>
         <div class="col-two">
-          <h1 style="font-weight: 300">Achieve peak productivity!</h1>
+          <h1 style="font-weight: 300">Achieve more with Kanban!</h1>
           <ul>
-            <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
-            <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
-            <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
-            <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
-            <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
-            <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
+            <li><b>Dynamic Kanban Board: </b>Visually manage tasks with drag-and-drop functionality and customizable
+              stages.
+            </li>
+            <li><b>Task Creation & Management: </b>Create tasks with details, deadlines, and dependencies for smooth
+              workflow.</li>
+            <li><b>Real-time Progress Tracking: </b>Monitor task progress and receive instant updates.</li>
+            <li><b>Seamless GitHub Integration: </b>Import and track GitHub issues as tasks in ManagD, syncing updates
+              in real-time.</li>
           </ul>
 
           <button>Take me there!</button>
@@ -132,12 +155,13 @@
         <div class="col-two">
           <h1 style="font-weight: 300">Achieve peak productivity!</h1>
           <ul>
-            <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
-            <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
-            <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
-            <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
-            <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
-            <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
+            <li><b>Calendly Meet Integration: </b>Schedule, join, and view Google Meet sessions within the app for
+              convenient team communication.</li>
+            <li><b>Intuitive UIs: </b>Tailored interfaces for members and organization admins, optimizing user
+              experience.</li>
+            <li><b>Graphical Analytics: </b>Visualize task progress and performance with informative graphs.</li>
+            <li><b>Collaborative Environment: </b>Enhance teamwork and communication for successful project outcomes.
+            </li>
           </ul>
 
           <button>Take me there!</button>
@@ -151,16 +175,16 @@
 
     <div class="fourth-section">
       <div class="cols">
-        <div data-purecounter-start="0" data-purecounter-end="50" class="purecounter header"></div>
-        <div class="count-msg">organisations are making use of ManagD</div>
+        <div data-purecounter-start="0" data-purecounter-end="862" class="purecounter header"></div>
+        <div class="count-msg">Members are making use of ManagD</div>
       </div>
       <div class="cols">
-        <div data-purecounter-start="0" data-purecounter-end="3000" class="purecounter header"></div>
-        <div class="count-msg">organisations are making use of ManagD</div>
+        <div data-purecounter-start="0" data-purecounter-end="2446" class="purecounter header"></div>
+        <div class="count-msg">Projects are making use of ManagD</div>
       </div>
       <div class="cols">
-        <div data-purecounter-start="0" data-purecounter-end="20" class="purecounter header"></div>
-        <div class="count-msg">organisations are making use of ManagD</div>
+        <div data-purecounter-start="0" data-purecounter-end="32" class="purecounter header"></div>
+        <div class="count-msg">Organisations are making use of ManagD</div>
       </div>
     </div>
 
@@ -260,6 +284,11 @@
   });
   const swiper = new Swiper(".swiper", {
     // Optional parameters
+    autoplay: {
+      delay: 2000,
+      disableOnInteraction: false,
+    },
+
     direction: "horizontal",
     loop: true,
 
@@ -276,6 +305,23 @@
 
     // And if we need scrollbar
   });
+
+  var a = false;
+function logo()
+{
+if(a==false)
+{
+document.getElementById("logoContainer").style.display="inline";
+return a=!a;
+}
+else 
+{
+document.getElementById("logoContainer").style.display="none";
+return a=!a;
+}
+}
+
+
 </script>
 
 </html>
